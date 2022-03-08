@@ -1,0 +1,100 @@
+---
+// Component Imports
+// import Tour from '../components/Tour.astro';
+// You can import components from any supported Framework here!
+
+
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+let title = 'My Astro Site';
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>{title}</title>
+
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<style global>
+		@import "../styles/global.css";
+	</style>
+
+	<style>
+
+		.column {
+			display:flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+		img {
+			padding: 8px;
+			border-radius: 15px;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<!-- <header>
+			<div>
+				<img width="60" height="80" src="/assets/logo.svg" alt="Astro logo">
+				<h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
+			</div>
+		</header> -->
+		<a href="https://frontpage-czi.pages.dev/">
+			<svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="white" class="bi bi-arrow-left"
+				viewBox="0 0 32 32">
+				<path fill-rule="evenodd"
+					d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+			</svg>
+		</a>
+		
+		<div class="column">
+			<a href="/img1zoom"><img src="/assets/thumbs/20210617_144141-2thumb.webp" loading="lazy" alt="fuckit"></a>
+			<a href="/img8zoom"><img src="/assets/thumbs/20210622_205739_HDR-2thumb.webp" loading="lazy" alt="fuckit"></a>
+			<a href="/img9zoom"><img src="/assets/thumbs/20210622_205809_HDR-2thumb.webp" loading="lazy" alt="fuckit"></a>
+
+			<a href="/img10zoom"><img src="/assets/thumbs/20210622_205928_HDR-2thumb.webp" loading="lazy" alt="fuckit"></a>
+			<a href="/img11zoom"><img src="/assets/thumbs/20210622_210740-2thumb.webp" loading="lazy" alt="fuckit"></a>
+			<a href="/img12zoom"><img src="/assets/thumbs/20210622_210743-2thumb.webp" loading="lazy" alt="fuckit"></a>
+			<a href="/img13zoom"><img src="/assets/thumbs/20210622_210815-2thumb.webp" loading="lazy" alt="fuckit"></a>
+			<a href="/img14zoom"><img src="/assets/thumbs/20210622_210818-2thumb.webp" loading="lazy" alt="fuckit"></a>
+			<a href="/img15zoom"><img src="/assets/thumbs/20210622_210840-2thumb.webp" loading="lazy" alt="fuckit"></a>
+			<a href="/img18zoom"><img src="/assets/thumbs/20210622_210907-2thumb.webp" loading="lazy" alt="fuckit"></a>
+			<a href="/img21zoom"><img src="/assets/thumbs/20210622_210933-2thumb.webp" loading="lazy" alt="fuckit"></a>
+			<a href="/img22zoom"><img src="/assets/thumbs/20210623_070121_HDR-2thumb.webp" loading="lazy" alt="fuckit"></a>
+			<a href="/img23zoom"><img src="/assets/thumbs/20210623_070125_HDR-2thumb.webp" loading="lazy" alt="fuckit"></a>
+			<a href="/img24zoom"><img src="/assets/thumbs/20210623_070413-2thumb.webp" loading="lazy" alt="fuckit"></a>
+			<a href="/img3zoom"><img src="/assets/thumbs/20210623_070454-2thumb.webp" loading="lazy" alt="fuckit"></a>
+			<a href="/img17zoom"><img src="/assets/thumbs/20210801_201746-2thumb.webp" loading="lazy" alt="fuckit"></a>
+			<a href="/img6zoom"><img src="/assets/thumbs/20210617_144600-2thumb.webp" loading="lazy" alt="fuckit"></a>
+			<a href="/img7zoom"><img src="/assets/thumbs/20210617_144701-2thumb.webp" loading="lazy" alt="fuckit"></a>
+		</div>
+
+		<div class="column">
+			<a href="/img2zoom"><img src="/assets/thumbs/20210617_144211-2thumb.webp" loading="lazy" alt="fuckit"></a>
+			<a href="/img5zoom"><img src="/assets/thumbs/20210617_144219-2thumb.webp" loading="lazy" alt="fuckit"></a>
+			<a href="/img4zoom"><img src="/assets/thumbs/20210623_070858-2thumb.webp" loading="lazy" alt="fuckit"></a>
+			<a href="/img16zoom"><img src="/assets/thumbs/20210623_070912-2thumb.webp" loading="lazy" alt="fuckit"></a>
+			<a href="/img19zoom"><img src="/assets/thumbs/20210801_201757-2thumb.webp" loading="lazy" alt="fuckit"></a>
+			<a href="/img20zoom"><img src="/assets/thumbs/20210801_201833-2thumb.webp" loading="lazy" alt="fuckit"></a>
+		</div>
+		<a href="https://frontpage-czi.pages.dev/">
+			<svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="white" class="bi bi-arrow-left"
+				viewBox="0 0 32 32">
+				<path fill-rule="evenodd"
+					d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+			</svg>
+		</a>
+
+		
+	</main>
+</body>
+</html>
