@@ -11,4 +11,5 @@ body {
 
 .zoom-pic {
 	max-width: 800px;
+	border-radius: 15px;
 }
