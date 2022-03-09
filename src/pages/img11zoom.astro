@@ -1,5 +1,5 @@
 ---
-
+import BackArrow from '../components/BackArrow.astro';
 let title = 'JoetteVisit';
 
 ---
@@ -15,31 +15,10 @@ let title = 'JoetteVisit';
 	<style global>
 		@import "../styles/global.css";
 	</style>
-
-	<style>
-
-		.zoom-pic-div-placeholder {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-		}
-
-		.zoom-pic {
-			max-width: 800px;
-		}
-	</style>
 </head>
 
 <body class="zoom-main">
-    <a href="/">
-        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="white" class="bi bi-arrow-left"
-            viewBox="0 0 32 32">
-            <path fill-rule="evenodd"
-                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
-        </svg>
-    </a>
-
+    <BackArrow />
     <div class="zoom-pic-div">
         <div class="zoom-pic-div-placeholder">
             <img  class="zoom-pic" src="/assets/20210622_210740-2.webp" />

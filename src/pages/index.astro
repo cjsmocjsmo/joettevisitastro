@@ -1,17 +1,6 @@
 ---
-// Component Imports
-// import Tour from '../components/Tour.astro';
-// You can import components from any supported Framework here!
-
-
-// Component Script:
-// You can write any JavaScript/TypeScript that you'd like here.
-// It will run during the build, but never in the browser.
-// All variables are available to use in the HTML template below.
+import BackArrow from '../components/BackArrow.astro';
 let title = 'My Astro Site';
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
 ---
 <html lang="en">
 <head>
@@ -42,19 +31,8 @@ let title = 'My Astro Site';
 </head>
 <body>
 	<main>
-		<!-- <header>
-			<div>
-				<img width="60" height="80" src="/assets/logo.svg" alt="Astro logo">
-				<h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
-			</div>
-		</header> -->
-		<a href="https://frontpage-czi.pages.dev/">
-			<svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="white" class="bi bi-arrow-left"
-				viewBox="0 0 32 32">
-				<path fill-rule="evenodd"
-					d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
-			</svg>
-		</a>
+
+		<BackArrow />
 		
 		<div class="column">
 			<a href="/img1zoom"><img src="/assets/thumbs/20210617_144141-2thumb.webp" loading="lazy" alt="fuckit"></a>
@@ -86,14 +64,8 @@ let title = 'My Astro Site';
 			<a href="/img19zoom"><img src="/assets/thumbs/20210801_201757-2thumb.webp" loading="lazy" alt="fuckit"></a>
 			<a href="/img20zoom"><img src="/assets/thumbs/20210801_201833-2thumb.webp" loading="lazy" alt="fuckit"></a>
 		</div>
-		<a href="https://frontpage-czi.pages.dev/">
-			<svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="white" class="bi bi-arrow-left"
-				viewBox="0 0 32 32">
-				<path fill-rule="evenodd"
-					d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
-			</svg>
-		</a>
 
+		<BackArrow />
 		
 	</main>
 </body>
