@@ -13,3 +13,16 @@ body {
 	max-width: 800px;
 	border-radius: 15px;
 }
+
+.column {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+img {
+	padding: 8px;
+	border-radius: 15px;
+}

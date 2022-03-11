@@ -1,72 +1,51 @@
 ---
-import BackArrowHome from '../components/BackArrowHome.astro';
-let title = 'My Astro Site';
+	import BackArrow from '../components/BackArrow.astro';
+	import Thumbpic from '../components/Thumbpic';
+	let title = 'My Astro Site';
 ---
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<title>{title}</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>{title}</title>
 
-	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-	<style global>
-		@import "../styles/global.css";
-	</style>
-
-	<style>
-
-		.column {
-			display:flex;
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: center;
-			align-items: center;
-		}
-
-		img {
-			padding: 8px;
-			border-radius: 15px;
-		}
-	</style>
-</head>
-<body>
-	<main>
-
-		<BackArrowHome />
-		
-		<div class="column">
-			<a href="/img1zoom"><img src="/assets/thumbs/20210617_144141-2thumb.webp" loading="lazy" alt="fuckit"></a>
-			<a href="/img8zoom"><img src="/assets/thumbs/20210622_205739_HDR-2thumb.webp" loading="lazy" alt="fuckit"></a>
-			<a href="/img9zoom"><img src="/assets/thumbs/20210622_205809_HDR-2thumb.webp" loading="lazy" alt="fuckit"></a>
-
-			<a href="/img10zoom"><img src="/assets/thumbs/20210622_205928_HDR-2thumb.webp" loading="lazy" alt="fuckit"></a>
-			<a href="/img11zoom"><img src="/assets/thumbs/20210622_210740-2thumb.webp" loading="lazy" alt="fuckit"></a>
-			<a href="/img12zoom"><img src="/assets/thumbs/20210622_210743-2thumb.webp" loading="lazy" alt="fuckit"></a>
-			<a href="/img13zoom"><img src="/assets/thumbs/20210622_210815-2thumb.webp" loading="lazy" alt="fuckit"></a>
-			<a href="/img14zoom"><img src="/assets/thumbs/20210622_210818-2thumb.webp" loading="lazy" alt="fuckit"></a>
-			<a href="/img15zoom"><img src="/assets/thumbs/20210622_210840-2thumb.webp" loading="lazy" alt="fuckit"></a>
-			<a href="/img18zoom"><img src="/assets/thumbs/20210622_210907-2thumb.webp" loading="lazy" alt="fuckit"></a>
-			<a href="/img21zoom"><img src="/assets/thumbs/20210622_210933-2thumb.webp" loading="lazy" alt="fuckit"></a>
-			<a href="/img22zoom"><img src="/assets/thumbs/20210623_070121_HDR-2thumb.webp" loading="lazy" alt="fuckit"></a>
-			<a href="/img23zoom"><img src="/assets/thumbs/20210623_070125_HDR-2thumb.webp" loading="lazy" alt="fuckit"></a>
-			<a href="/img24zoom"><img src="/assets/thumbs/20210623_070413-2thumb.webp" loading="lazy" alt="fuckit"></a>
-			<a href="/img3zoom"><img src="/assets/thumbs/20210623_070454-2thumb.webp" loading="lazy" alt="fuckit"></a>
-			<a href="/img17zoom"><img src="/assets/thumbs/20210801_201746-2thumb.webp" loading="lazy" alt="fuckit"></a>
-			<a href="/img6zoom"><img src="/assets/thumbs/20210617_144600-2thumb.webp" loading="lazy" alt="fuckit"></a>
-			<a href="/img7zoom"><img src="/assets/thumbs/20210617_144701-2thumb.webp" loading="lazy" alt="fuckit"></a>
-		</div>
-
-		<div class="column">
-			<a href="/img2zoom"><img src="/assets/thumbs/20210617_144211-2thumb.webp" loading="lazy" alt="fuckit"></a>
-			<a href="/img5zoom"><img src="/assets/thumbs/20210617_144219-2thumb.webp" loading="lazy" alt="fuckit"></a>
-			<a href="/img4zoom"><img src="/assets/thumbs/20210623_070858-2thumb.webp" loading="lazy" alt="fuckit"></a>
-			<a href="/img16zoom"><img src="/assets/thumbs/20210623_070912-2thumb.webp" loading="lazy" alt="fuckit"></a>
-			<a href="/img19zoom"><img src="/assets/thumbs/20210801_201757-2thumb.webp" loading="lazy" alt="fuckit"></a>
-			<a href="/img20zoom"><img src="/assets/thumbs/20210801_201833-2thumb.webp" loading="lazy" alt="fuckit"></a>
-		</div>
-
-		<BackArrowHome />
-		
-	</main>
-</body>
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<style global>
+			@import "../styles/global.css";
+		</style>
+	</head>
+	<body>
+		<main>
+			<BackArrow addr="https://frontpageastro.pages.dev/" />
+			<div class="column">
+				<Thumbpic href="/img1zoom" src="/assets/thumbs/20210617_144141-2thumb.webp"/>
+				<Thumbpic href="/img8zoom" src="/assets/thumbs/20210622_205739_HDR-2thumb.webp" />
+				<Thumbpic href="/img9zoom" src="/assets/thumbs/20210622_205809_HDR-2thumb.webp" />
+				<Thumbpic href="/img10zoom" src="/assets/thumbs/20210622_205928_HDR-2thumb.webp" />
+				<Thumbpic href="/img11zoom" src="/assets/thumbs/20210622_210740-2thumb.webp" />
+				<Thumbpic href="/img12zoom" src="/assets/thumbs/20210622_210743-2thumb.webp" />
+				<Thumbpic href="/img13zoom" src="/assets/thumbs/20210622_210815-2thumb.webp" />
+				<Thumbpic href="/img14zoom" src="/assets/thumbs/20210622_210818-2thumb.webp" />
+				<Thumbpic href="/img15zoom" src="/assets/thumbs/20210622_210840-2thumb.webp" />
+				<Thumbpic href="/img18zoom" src="/assets/thumbs/20210622_210907-2thumb.webp" />
+				<Thumbpic href="/img21zoom" src="/assets/thumbs/20210622_210933-2thumb.webp" />
+				<Thumbpic href="/img22zoom" src="/assets/thumbs/20210623_070121_HDR-2thumb.webp" />
+				<Thumbpic href="/img23zoom" src="/assets/thumbs/20210623_070125_HDR-2thumb.webp" />
+				<Thumbpic href="/img24zoom" src="/assets/thumbs/20210623_070413-2thumb.webp" />
+				<Thumbpic href="/img3zoom" src="/assets/thumbs/20210623_070454-2thumb.webp" />
+				<Thumbpic href="/img17zoom" src="/assets/thumbs/20210801_201746-2thumb.webp" />
+				<Thumbpic href="/img6zoom" src="/assets/thumbs/20210617_144600-2thumb.webp" />
+				<Thumbpic href="/img7zoom" src="/assets/thumbs/20210617_144701-2thumb.webp" />
+			</div>
+			<div class="column">
+				<Thumbpic href="/img2zoom" src="/assets/thumbs/20210617_144211-2thumb.webp" />
+				<Thumbpic href="/img5zoom" src="/assets/thumbs/20210617_144219-2thumb.webp" />
+				<Thumbpic href="/img4zoom" src="/assets/thumbs/20210623_070858-2thumb.webp" />
+				<Thumbpic href="/img16zoom" src="/assets/thumbs/20210623_070912-2thumb.webp" />
+				<Thumbpic href="/img19zoom" src="/assets/thumbs/20210801_201757-2thumb.webp" />
+				<Thumbpic href="/img20zoom" src="/assets/thumbs/20210801_201833-2thumb.webp" />
+			</div>
+			<BackArrow addr="https://frontpageastro.pages.dev/" />
+		</main>
+	</body>
 </html>

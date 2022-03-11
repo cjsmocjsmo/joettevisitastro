@@ -1,29 +1,24 @@
 ---
-import BackArrow from '../components/BackArrow.astro';
-let title = 'JoetteVisit';
-
+	import BackArrow from '../components/BackArrow.astro';
+	import Zoompic from '../components/Zoompic.astro';
+	let title = 'JoetteVisit';
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<title>{title}</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>{title}</title>
 
-	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-	<style global>
-		@import "../styles/global.css";
-	</style>
-</head>
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<style global>
+			@import "../styles/global.css";
+		</style>
+	</head>
 
-<body class="zoom-main">
-	<BackArrow />
-    <div class="zoom-pic-div">
-        <div class="zoom-pic-div-placeholder">
-            <img  class="zoom-pic" src="/assets/20210617_144141-2.webp" />
-        </div>
-    </div>
-</body>
-
+	<body class="zoom-main">
+		<BackArrow addr="/" />
+		<Zoompic src="/assets/20210617_144141-2.webp" />
+	</body>
 </html>
